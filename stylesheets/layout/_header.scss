@@ -1,0 +1,36 @@
+.header {
+
+    nav {
+        padding: 24px;
+        background-color: $peach;
+    }
+    &__logo{
+        img {
+            width: 8rem;
+            height: 3rem;
+        }
+
+    }
+  
+
+        &__links {
+
+            a {
+                font-size: $font-med;
+                &:not(:last-child){
+                    margin-right: 16px;
+                }
+            }
+    }
+
+    .burger {
+        display: block;
+                width: 26px;
+                height: 2px;
+                background-color: $coffee;
+
+                &:not(:last-child) {
+                    margin-bottom: 3px;
+                }
+    }
+}

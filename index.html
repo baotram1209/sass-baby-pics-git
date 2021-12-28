@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Baby-pics</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,12 +18,11 @@
 
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="stylesheets/main.css">
-
   <meta name="theme-color" content="#fafafa">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&family=Oooh+Baby&family=Open+Sans:wght@400;500&family=Raleway:wght@200&display=swap"
-    rel="stylesheet">
-    <script src="https://kit.fontawesome.com/aa51b06ca8.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/aa51b06ca8.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -31,13 +30,14 @@
 <body>
 
   <!-- Add your site or application content here -->
-  
+
   <!-- Navbar section -->
- 
-    <nav class="navbar">
-      <ul class="nav-list">
-        <div class="nav-item logo"><img src="img/logo.jpg" alt="logo"></div>
-        <li class="nav-item"><a href="index.html">Accueil</a></li>
+
+  <header class="header">
+    <nav class="flex flex-jc-sb flex-ai-c">
+      <a href="/" class="header__logo"><img src="img/logo.jpg" alt="logo"></a>
+
+      <!-- <li class="nav -item"><a href="index.html">Accueil</a></li>
         <li class="nav-item"><a href="a-propos.html">A propos</a></li>
         <li class="nav-item"><a href="galerie.html">Galeries</a></li>
         <li class="nav-item"><a href="studio.html">Studio</a></li>
@@ -47,18 +47,33 @@
 
         <div class="nav-item" class="search">
           <input type="text" name="search" id="search" placeholder="Rechercher">
-        </div>
-
-      </ul>
+        </div> -->
+      <a href="#" class="header__menu hide-for-desktop">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </a>
+      <div class="header__links hide-for-mobile">
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">A propos</a>
+        <a href="galerie.html">Galeries</a>
+        <a href="studio.html">Studio</a>
+        <a href="blog.html">Blog</a>
+        <a href="prestations.html">Prestations</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <!-- <div class="search">
+        <input type="text" name="search" id="search" placeholder="Rechercher">
+      </div> -->
     </nav>
-  
+  </header>
 
 
   <section class="container">
     <main>
       <div class="main">
         <p class="main-title">KATRINA WILSON PHOTOGRAPHY</p>
-        <a href="contact.html" class="btn">Contactez-moi</a>
+        <div class="button main__cta"> <a href="contact.html">Contactez-moi</a> </div>
       </div>
     </main>
 
