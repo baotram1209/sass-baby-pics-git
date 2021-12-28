@@ -18,11 +18,13 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/hero',
   'layout/flex';
 
 
 // 5. Components
 @import
+'components/images',
   'components/buttons';
 
 // 6. Page-specific styles

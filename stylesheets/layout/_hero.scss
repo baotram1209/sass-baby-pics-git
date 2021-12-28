@@ -1,0 +1,21 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60vh;
+
+}
+
+.main__image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+//grid-row-start / grid-column-start / grid-row-end / grid-column-end
+
+.main__overlay {
+    grid-area: 1 / 1 / 2 / 2;
+    max-width: 100%;
+    background: linear-gradient(to right, $coffee, $white 30%);
+}
+
+.main__text {
+    grid-area: 1 / 1 / 2 / 2;
+}
