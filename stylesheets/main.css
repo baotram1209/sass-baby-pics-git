@@ -76,8 +76,8 @@ main {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 60vh;
-      grid-template-rows: 60vh;
+  -ms-grid-rows: 80vh;
+      grid-template-rows: 80vh;
 }
 
 .main__image {
