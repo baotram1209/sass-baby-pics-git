@@ -21,6 +21,7 @@
 .feature {
     &__grid {
     display: grid;
+    grid-gap: 0.3rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
     grid-template-areas: 
@@ -30,18 +31,20 @@
     "feature__studio"
     "feature__blog"
     ;
-    }
     @include breakpoint-up(medium){
+       
         grid-template-columns: repeat(3,1fr) ;
         grid-template-rows: repeat(2,1fr);
         grid-template-areas: 
         "profile__image profile__text profile__text"
         "feature__prestations feature__studio feature__blog";
     }
+   
+    }
     
-    // &__item {
-
-    // }
+    &__item {
+background-color: $background-white;
+    }
     // &__image {
 
     // }

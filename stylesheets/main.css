@@ -168,6 +168,7 @@ main {
 .feature__grid {
   display: -ms-grid;
   display: grid;
+  grid-gap: 0.3rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: (1fr)[5];
@@ -176,13 +177,17 @@ main {
 }
 
 @media (min-width: 40em) {
-  .feature {
+  .feature__grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: "profile__image profile__text profile__text" "feature__prestations feature__studio feature__blog";
   }
+}
+
+.feature__item {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 img {
