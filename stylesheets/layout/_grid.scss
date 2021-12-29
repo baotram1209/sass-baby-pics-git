@@ -4,15 +4,23 @@
 
 .feature {
     &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include breakpoint-up(medium){
+        grid-template-columns: repeat (2, 1fr);
+    }
+    @include breakpoint-up(large){
+        grid-template-columns: repeat (3, 1fr);
 
     }
-    &__item {
-
     }
-    &__image {
+    // &__item {
 
-    }
-    &__text {
+    // }
+    // &__image {
 
-    }
+    // }
+    // &__text {
+
+    // }
 }
