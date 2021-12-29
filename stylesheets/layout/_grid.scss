@@ -1,19 +1,44 @@
 .feature {
     background-color: $peach;
 }
+//Define grid area
+.profile__image{
+    grid-area: profile__image;
+    }
+    .profile__text{
+        grid-area: profile__text;
+    }
+    .feature__prestations{
+        grid-area: feature__prestations;
+    }
+    .feature__studio{
+        grid-area: feature__studio;
+    }
+    .feature__blog{
+        grid-area: feature__blog;
+    }
 
 .feature {
     &__grid {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "profile__image"
+    "profile__text"
+    "feature__prestations"
+    "feature__studio"
+    "feature__blog"
+    ;
+    }
     @include breakpoint-up(medium){
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(3,1fr) ;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "profile__image profile__text profile__text"
+        "feature__prestations feature__studio feature__blog";
     }
-    @include breakpoint-up(large){
-        grid-template-columns: repeat (3, 1fr);
-
-    }
-    }
+    
     // &__item {
 
     // }
@@ -24,3 +49,4 @@
 
     // }
 }
+
