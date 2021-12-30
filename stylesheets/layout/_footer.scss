@@ -1,0 +1,30 @@
+.footer {
+    background-color: $peach;
+    padding: 2.5rem;
+    text-align: center;
+    &__item {
+        display: inline-block;
+        &:not(:last-child){
+            margin-bottom: 1.7rem;
+    }
+}
+    // &__contact {
+    //     margin-bottom: 1.7rem;
+    //     display: inline-block;
+    // }
+
+    // &__address {
+    //     margin-bottom: 1.7rem;
+    //     display: inline-block;
+    // }
+
+    &__social a {
+       display: block;
+       &:not(:last-child){
+        margin-right: 1rem;
+    }
+}
+    // &__rights {
+    //     display: inline-block;
+    // }
+}

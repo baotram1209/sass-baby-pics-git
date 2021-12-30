@@ -21,6 +21,7 @@ a, a:visited, a:hover {
     color: $coffee;
 }
 
+
 //Visibility
 .hide-for-mobile {
     @include breakpoint-down(medium){
