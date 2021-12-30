@@ -1,21 +1,36 @@
+// main {
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 50vh;
+
+// }
+
+// .main__image {
+//     grid-area: 1 / 1 / 2 / 2;
+// }
+// //grid-row-start / grid-column-start / grid-row-end / grid-column-end
+
+// .main__overlay {
+//     grid-area: 1 / 1 / 2 / 2;
+//     max-width: 100%;
+//     background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(127,85,57,0.7))
+// }
+
+// .main__text {
+//     grid-area: 1 / 1 / 2 / 2;
+// }
+
 main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80vh;
+    background-image: url("../../img/mom-with-baby.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 
+   
 }
-
-.main__image {
-    grid-area: 1 / 1 / 2 / 2;
-}
-//grid-row-start / grid-column-start / grid-row-end / grid-column-end
-
-.main__overlay {
-    grid-area: 1 / 1 / 2 / 2;
-    max-width: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(127,85,57,0.7))
-}
-
-.main__text {
-    grid-area: 1 / 1 / 2 / 2;
+.main__text{
+    background-color: $background-white;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
 }

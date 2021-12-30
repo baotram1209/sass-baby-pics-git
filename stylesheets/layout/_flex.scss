@@ -11,4 +11,15 @@
     &-ai-c {
         align-items: center;
     }
+    
+    }
+
+
+.flex__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // justify-items: center;
+    // align-content: center;
 }

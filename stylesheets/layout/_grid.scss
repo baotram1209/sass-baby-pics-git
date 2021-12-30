@@ -43,13 +43,14 @@
     }
     
     &__item {
-background-color: $background-white;
+        background-color: $background-white;
+        padding: 1.5rem;
     }
-    // &__image {
-
-    // }
+    &__image {
+       position: center;
+    }
     // &__text {
-
+    
     // }
 }
 

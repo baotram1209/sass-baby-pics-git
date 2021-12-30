@@ -39,8 +39,9 @@ body {
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: #ffd5b8;
+  width: 100vw;
 }
 
 .header__logo img {
@@ -72,39 +73,17 @@ body {
 }
 
 main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 80vh;
-      grid-template-rows: 80vh;
-}
-
-.main__image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.main__overlay {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
-  max-width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(127, 85, 57, 0.7)));
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(127, 85, 57, 0.7));
+  background-image: url("../../img/mom-with-baby.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .main__text {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 30px;
 }
 
 .flex {
@@ -126,6 +105,22 @@ main {
 }
 
 .flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -187,7 +182,12 @@ main {
 }
 
 .feature__item {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem;
+}
+
+.feature__image {
+  position: center;
 }
 
 img {
@@ -210,5 +210,10 @@ figure {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.button:hover {
+  background: -webkit-gradient(linear, right top, left top, from(#ffd5b8), to(#d9e3dd));
+  background: linear-gradient(to left, #ffd5b8, #d9e3dd);
 }
 /*# sourceMappingURL=main.css.map */

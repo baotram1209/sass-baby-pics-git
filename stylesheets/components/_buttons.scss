@@ -3,4 +3,7 @@
     background: linear-gradient(to right, hsl(25, 100, 86), hsl(144, 15, 87));
     border-radius: 50px;
     width: fit-content;
+&:hover{
+    background: linear-gradient(to left, hsl(25, 100, 86), hsl(144, 15, 87));
+}
 }
