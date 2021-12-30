@@ -21,15 +21,7 @@ a, a:visited, a:hover {
     color: $coffee;
 }
 
+li {
+    list-style: none;
+}
 
-//Visibility
-.hide-for-mobile {
-    @include breakpoint-down(medium){
-        display:none;
-    }
-}
-.hide-for-desktop {
-@include breakpoint-up(large){
-    display:none;
-}
-}

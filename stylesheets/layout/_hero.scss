@@ -23,9 +23,13 @@
 main {
     background-image: url("../../img/mom-with-baby.jpg");
     min-height: 100vh;
+    // margin-top: 5rem; // so we don't lose image doesn't go underneath navbar
     background-size: cover;
     background-position: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
 }
 .main__text{

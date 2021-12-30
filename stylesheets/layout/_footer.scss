@@ -1,30 +1,50 @@
 .footer {
     background-color: $peach;
     padding: 2.5rem;
-    text-align: center;
-    &__item {
+    &:not(:last-child){
+        margin-bottom: 1.7rem;
+}
+    @include breakpoint-up(large){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    grid-template-areas: 
+    "contact social rights"
+    "address social rights";
+}
+}
+.footer__contact {
+    @include breakpoint-up(large){
+        grid-area: contact;
+    }
+}
+.footer__address{
+    @include breakpoint-up(large){
+        grid-area: address;
+    }
+}
+.footer__social{
+    a{
         display: inline-block;
-        &:not(:last-child){
-            margin-bottom: 1.7rem;
+    }
+   a:not(:last-child){
+       
+    margin-right: 1rem;
+}
+    @include breakpoint-up(large){
+        grid-area: social;
+        display: flex;
+      justify-content: center;
+      align-items: center;
     }
 }
-    // &__contact {
-    //     margin-bottom: 1.7rem;
-    //     display: inline-block;
-    // }
-
-    // &__address {
-    //     margin-bottom: 1.7rem;
-    //     display: inline-block;
-    // }
-
-    &__social a {
-       display: block;
-       &:not(:last-child){
-        margin-right: 1rem;
+.footer__rights{
+    @include breakpoint-up(large){
+        grid-area: rights;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      
     }
-}
-    // &__rights {
-    //     display: inline-block;
-    // }
 }

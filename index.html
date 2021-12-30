@@ -34,24 +34,24 @@
   <!-- Navbar section -->
 
   <header class="header">
-    <nav class="flex flex-jc-sb flex-ai-c">
+    <nav class="nav">
       <a href="/" class="header__logo"><img src="img/logo.jpg" alt="logo"></a>
-
-
       <a href="#" class="header__menu hide-for-desktop">
         <span class="burger"></span>
         <span class="burger"></span>
         <span class="burger"></span>
       </a>
-      <div class="header__links hide-for-mobile">
-        <a href="index.html">Accueil</a>
-        <a href="a-propos.html">A propos</a>
-        <a href="galerie.html">Galeries</a>
-        <a href="studio.html">Studio</a>
-        <a href="blog.html">Blog</a>
-        <a href="prestations.html">Prestations</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <article class="hide-for-mobile">
+        <ul class="nav__list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">A propos</a></li>
+        <li><a href="galerie.html">Galeries</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </article>
       <!-- <div class="search">
         <input type="text" name="search" id="search" placeholder="Rechercher">
       </div> -->
@@ -60,7 +60,7 @@
 
 
 
-  <main class="flex__column">
+  <main>
     <article class="main__text">
       <h1>
         KATRINA WILSON PHOTOGRAPHY
@@ -71,14 +71,13 @@
   </main>
 
   <section class="feature">
-  <section class="feature__grid">
-    
-    <figure class="feature__item profile__image flex">
-     
-        <img src="img/profile.jpg" alt="profile-picture">
+
+    <figure class="feature__item profile__image">
+
+      <img src="img/profile.jpg" alt="profile-picture">
     </figure>
-  
-    <article class="feature__item profile__text flex__column">
+
+    <article class="feature__item profile__text">
 
       <h2>A PROPOS</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex nisi, viverra id porta quis, facilisis in
@@ -89,63 +88,63 @@
 
     </article>
 
-    <article class="feature__item feature__prestations flex__column">
+    <article class="feature__item feature__prestations">
       <!-- <article class="feature__image" style="background-image: url('/img/baby3.jpg')">
       </article> -->
-      <article class="feature__text">
-        <h2>Prestations</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur ahgbdipisicing elit. Aspernatur, maiores iure. Optio deserunt itaque
-          repellat harum fuga, beatae quisquam dolore illo, commodi sunt esse quis doloribus blanditiis corporis
-          assumenda! Aliquid!
-        </p>
-      </article>
+
+      <h2>Prestations</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur ahgbdipisicing elit. Aspernatur, maiores iure. Optio deserunt itaque
+        repellat harum fuga, beatae quisquam dolore illo, commodi sunt esse quis doloribus blanditiis corporis
+        assumenda! Aliquid!
+      </p>
+
     </article>
 
-    <article class="feature__item feature__studio flex__column">
+    <article class="feature__item feature__studio">
       <!-- <article class="feature__image" style="background-image: url('/img/baby1.jpg')">
 
       </article> -->
-      <article class="feature__text">
-        <h2>Studio</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, maiores iure. Optio deserunt itaque
-          repellat harum fuga, beatae quisquam dolore illo, commodi sunt esse quis doloribus blanditiis corporis
-          assumenda! Aliquid!
-        </p>
-      </article>
+
+      <h2>Studio</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, maiores iure. Optio deserunt itaque
+        repellat harum fuga, beatae quisquam dolore illo, commodi sunt esse quis doloribus blanditiis corporis
+        assumenda! Aliquid!
+      </p>
+
     </article>
 
-    <article class="feature__item feature__blog flex__column">
+    <article class="feature__item feature__blog">
       <!-- <article class="feature__image" style="background-image: url('/img/family3.jpg')">
 
       </article> -->
-      <article class="feature__text">
-        <h2>Blog</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, maiores iure. Optio deserunt
-          itaque repellat harum fuga, beatae quisquam dolore illo, commodi sunt esse quis doloribus blanditiis
-          corporis assumenda! Aliquid!
-        </p>
 
-      </article>
+      <h2>Blog</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, maiores iure. Optio deserunt
+        itaque repellat harum fuga, beatae quisquam dolore illo, commodi sunt esse quis doloribus blanditiis
+        corporis assumenda! Aliquid!
+      </p>
+
+
 
     </article>
 
   </section>
-</section>
+
 
   <footer class="footer">
-   
-      <h3 class="footer__contact footer__item">Contact</h3>
-      <p class="footer__address footer__item">Lorem ipsum dolor sit amet</p>
-    
-    <section class="footer__social footer__item">
-      
-    <a href="link-insta"><i class="fab fa-instagram fa-2x" style="color:black"></i></a>
-    <a href="link-fb"><i class="fab fa-facebook fa-2x" style="color:black"></i></a>
-    <a href="link-tiktok"><i class="fab fa-tiktok fa-2x" style="color:black"></i></a>
-  
-  </section>
+
+    <h3 class="footer__contact footer__item">Contact</h3>
+    <p class="footer__address footer__item">Lorem ipsum dolor sit amet</p>
+
+    <article class="footer__social footer__item">
+
+      <a href="link-insta"><i class="fab fa-instagram fa-2x" style="color:black"></i></a>
+      <a href="link-fb"><i class="fab fa-facebook fa-2x" style="color:black"></i></a>
+      <a href="link-tiktok"><i class="fab fa-tiktok fa-2x" style="color:black"></i></a>
+
+    </article>
     <p class="footer__rights footer__item">All rights reserved</p>
-   
+
   </footer>
 
 

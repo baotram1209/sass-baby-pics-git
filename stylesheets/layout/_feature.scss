@@ -1,25 +1,9 @@
 .feature {
     background-color: $peach;
 }
-//Define grid area
-.profile__image{
-    grid-area: profile__image;
-    }
-    .profile__text{
-        grid-area: profile__text;
-    }
-    .feature__prestations{
-        grid-area: feature__prestations;
-    }
-    .feature__studio{
-        grid-area: feature__studio;
-    }
-    .feature__blog{
-        grid-area: feature__blog;
-    }
 
 .feature {
-    &__grid {
+    
     display: grid;
     grid-gap: 0.3rem;
     grid-template-columns: 1fr;
@@ -40,17 +24,34 @@
         "feature__prestations feature__studio feature__blog";
     }
    
-    }
+    
     
     &__item {
         background-color: $background-white;
         padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    &__image {
-       position: center;
-    }
-    // &__text {
-    
-    // }
+
+ 
 }
+//Define grid area
+.profile__image{
+    grid-area: profile__image;
+}
+
+.profile__text{
+        grid-area: profile__text;
+    }
+.feature__prestations{
+        grid-area: feature__prestations;
+    }
+.feature__studio{
+        grid-area: feature__studio;
+    }
+.feature__blog{
+        grid-area: feature__blog;
+    }
+
 

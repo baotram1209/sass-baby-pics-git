@@ -1,41 +1,57 @@
 .header {
+position: sticky;
+top: 0;
+padding: 1.5rem;
+background-color: $peach;
+width: 100vw;
+height: 5rem;
+z-index: 100; //z-index is for z-axis, for the navbar to display above all else on 3 dimension
+    .nav {
+        display: flex;
+        justify-content: space-between;
+       }
+       &__list {
+           display:flex;
+           justify-content: space-around;
+           align-items: center;
 
-    nav {
-        padding: 1.5rem;
-        background-color: $peach;
-        width: 100vw;
+       }
     }
-    &__logo{
-        img {
-            width: 8em;
-            height: 5em;
-        }
 
-    }
-  
+.burger {
+    display: block;
+            width: 26px;
+            height: 2px;
+            background-color: $coffee;
 
-        &__links {
-
-            a {
-                font-size: $font-med; 
-                &:not(:last-child){
-                    margin-right: 16px;
-
-                &:hover{
-                    color: $black;
-                }
-                }
+            &:not(:last-child) {
+                margin-bottom: 3px;
             }
+        }
+.nav__logo {
+    img {
+        height: 4rem;
+        width: auto;
     }
-
-    .burger {
-        display: block;
-                width: 26px;
-                height: 2px;
-                background-color: $coffee;
-
-                &:not(:last-child) {
-                    margin-bottom: 3px;
-                }
+}
+.nav__list a {
+    font-size: $font-med; 
+    &:not(:last-child){
+        margin-right: 16px;
     }
+    &:hover{
+        color: $black;
+
+}
+}
+//Responsive Visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium){
+        display:none;
+    }
+}
+.hide-for-desktop {
+@include breakpoint-up(large){
+    display:none;
+}
 }
