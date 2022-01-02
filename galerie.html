@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="zxx">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Baby-pics</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,92 +16,98 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="stylesheets/main.css">
   <meta name="theme-color" content="#fafafa">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lobster&family=Oooh+Baby&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/aa51b06ca8.js" crossorigin="anonymous"></script>
+
 </head>
 
 
 <body>
 
   <!-- Add your site or application content here -->
-  <header>
-    <nav class="navbar">
-      <ul class="nav-list">
-        <div class="nav-item logo"><img src="img/logo.jpg" alt="logo"></div>
-        <li class="nav-item"><a href="index.html">Accueil</a></li>
-        <li class="nav-item"><a href="a-propos.html">A propos</a></li>
-        <li class="nav-item"><a href="galerie.html">Galeries</a></li>
-        <li class="nav-item"><a href="studio.html">Studio</a></li>
-        <li class="nav-item"><a href="blog.html">Blog</a></li>
-        <li class="nav-item"><a href="prestations.html">Prestations</a></li>
-        <li class="nav-item"><a href="contact.html">Contact</a></li>
-        <!-- 
-          <li><a href="link-insta"><img src="icon/instagram.png" alt="icon-instagram"></a></li>
-          <li><a href="link-fb"><img src="icon/facebook.png" alt="icon-fb"></a></li>
-          <li><a href="link-tiktok"><img src="icon/tik-tok.png" alt="icon-tiktok"></a></li> -->
-        <div class="nav-item" class="search">
-          <input type="text" name="search" id="search" placeholder="Rechercher">
-        </div>
-
+  <header class="header">
+    <nav class="nav">
+      <a href="/" ><figure class="header__logo"><img src="img/logo.jpg" alt="logo"></figure></a>
+      <a href="#" class="header__menu hide-for-desktop">
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+      </a>
+      <section class="hide-for-mobile">
+        <ul class="nav__list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">A propos</a></li>
+        <li><a href="galerie.html">Galeries</a></li>
+        <li><a href="studio.html">Studio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="prestations.html">Prestations</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
+    </section>
+      <!-- <div class="search">
+        <input type="text" name="search" id="search" placeholder="Rechercher">
+      </div> -->
     </nav>
   </header>
 
 
 
-  <section class="top">
-    <h1>GALERIES</h1>
-  </section>
 
   <section class="galerie">
+   <h2 class=" fig0 galerie__title">GALERIES</h2>
+  <figure class="fig1">
+    <img src="img/kid-with-flowers.jpg" alt="kid-with-flower">
+  </figure>
 
-  <article class="p1">
-    <img src="img/a.jpg" alt="photo-a">
+  <article class="fig2">
+    <img src="img/kid-in-traditional-dress.jpg" alt="kid-in-traditional-dress">
   </article>
 
-  <article class="p2">
-    <img src="img/b.jpg" alt="photo-b">
+  <article class="fig3">
+    <img src="img/kid-and-mom-playing.jpg" alt="kid-and-mom-playing">
   </article>
 
-  <article class="p3">
-    <img src="img/c.jpg" alt="photo-c">
+  <article class="fig4">
+    <img src="img/kid-sitting-on-bed.jpg" alt="kid-sitting-on-bed">
   </article>
 
-  <article class="p4">
-    <img src="img/d.jpg" alt="photo-d">
+  <article class="fig5">
+    <img src="img/kid-with-panting-color.jpg" alt="kid-with-panting-color">
   </article>
 
-  <article class="p5">
-    <img src="img/e.jpg" alt="photo-e">
-  </article>
-
-  <article class="p6">
-    <img src="img/2.jpg" alt="photo-2">
+  <article class="fig6">
+    <img src="img/family-on-the-field.jpg" alt="family-on-the-field">
   </article>
   
-  <article class="p7">
-    <img src="img/f.png" alt="photo-f">
+  <article class="fig7">
+    <img src="img/kid-showing-tongue.png" alt="kid-showing-tongue">
   </article>
 
 </section>
   
+<footer class="footer">
+
+  <h3 class="footer__contact footer__item">Contact</h3>
+  <p class="footer__address footer__item">Lorem ipsum dolor sit amet</p>
+
+  <ul class="footer__social footer__item">
+
+    <a href="link-insta"><i class="fab fa-instagram fa-2x" style="color:black"></i></a>
+    <a href="link-fb"><i class="fab fa-facebook fa-2x" style="color:black"></i></a>
+    <a href="link-tiktok"><i class="fab fa-tiktok fa-2x" style="color:black"></i></a>
+
+  </ul>
+  <p class="footer__rights footer__item">All rights reserved</p>
+
+</footer>
 
    
-<section>
-  <footer class="footer-bar">
-    <div>
-    <h3 class="foot-item">Contact</h3>
-    <p class="foot-item">Lorem ipsum dolor sit amet</p>
-  </div>
-    <li class="foot-item"><a href="link-insta"><img src="icon/instagram.png" alt="icon-instagram"></a></li>
-    <li class="foot-item"><a href="link-fb"><img src="icon/facebook.png" alt="icon-fb"></a></li>
-    <li class="foot-item"><a href="link-tiktok"><img src="icon/tik-tok.png" alt="icon-tiktok"></a></li>
-    <p class="foot-item">All rights reserved</p>
-  </footer>
-</section>
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

@@ -1,0 +1,37 @@
+.contact{
+    display: grid;
+    max-width: 60%;
+    margin: auto; //to put the grid in center of the screen   
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr;
+    grid-template-areas: 
+   "contact__title"
+   "contact__form";
+  }
+  .contact__title {
+      grid-area: contact__title;
+      display: block;
+      padding: 1.5rem;
+      display: flex;
+    justify-content: center;
+      align-items: center;
+  }
+  .contact__form {
+    grid-area: contact__form;
+    border: $basic-border;
+    padding: 1rem;
+    p {
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    }
+    input{
+        width: 90%;
+    }
+  }
+
+    
+
+
+  

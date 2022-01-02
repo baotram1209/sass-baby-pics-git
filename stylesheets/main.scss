@@ -19,7 +19,6 @@
 @import
   'layout/header',
   'layout/hero',
-  'layout/flex',
   'layout/feature',
   'layout/footer';
 
@@ -30,7 +29,11 @@
   'components/buttons';
 
 // 6. Page-specific styles
-
+@import
+'pages/galeries',
+'pages/prestations',
+'pages/contact'
+;
 
 // 7. Themes
 

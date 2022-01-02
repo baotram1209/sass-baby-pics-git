@@ -1,4 +1,4 @@
-.button {
+.main__button {
     padding: 1rem 2rem;
     background: linear-gradient(to right, hsl(25, 100, 86), hsl(144, 15, 87));
     border-radius: 50px;
@@ -6,4 +6,12 @@
 &:hover{
     background: linear-gradient(to left, hsl(25, 100, 86), hsl(144, 15, 87));
 }
+}
+
+button {
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem;
+    color: $white;
+    background-color: $coffee;
 }

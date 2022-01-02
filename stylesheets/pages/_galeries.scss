@@ -1,0 +1,26 @@
+
+.galerie {
+    display: grid;
+    padding: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  10rem 1fr 1fr 1fr;
+    grid-template-areas: 
+    "fig0 fig0 fig0"
+    "fig1 fig2 fig3"
+    "fig1 fig4 fig5"
+    "fig6 fig6 fig7";
+    grid-gap: 0.2rem;
+    /* width: 100vw; */
+  }
+  @for $i from 0 through 7 {
+    .fig#{$i} {
+      grid-area: fig#{$i};
+    }
+  }
+  .galerie__title {
+  display: block;
+    padding: 1.5rem;
+    display: flex;
+  justify-content: center;
+    align-items: center;
+}

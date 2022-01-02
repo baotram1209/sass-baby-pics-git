@@ -1,5 +1,6 @@
 .feature {
     background-color: $peach;
+    width: 100%;
 }
 
 .feature {
@@ -7,8 +8,9 @@
     display: grid;
     grid-gap: 0.3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: 5rem repeat(4,1fr);
     grid-template-areas: 
+    "feature__title"
     "profile__image"
     "profile__text"
     "feature__prestations"
@@ -18,8 +20,9 @@
     @include breakpoint-up(medium){
        
         grid-template-columns: repeat(3,1fr) ;
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: 5rem 1fr 1fr;
         grid-template-areas: 
+        "feature__title feature__title feature__title"
         "profile__image profile__text profile__text"
         "feature__prestations feature__studio feature__blog";
     }
@@ -37,6 +40,10 @@
  
 }
 //Define grid area
+.feature__title{
+    // display: block;
+    grid-area: feature__title;
+}
 .profile__image{
     grid-area: profile__image;
 }

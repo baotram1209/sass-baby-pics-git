@@ -1,0 +1,33 @@
+
+.prestations{
+    display: grid;
+    max-width: 80%;
+    margin: auto; //to put the grid in center of the screen
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10rem repeat(4, 1fr);
+    grid-template-areas: 
+    "prestations__item__1 prestations__item__1 prestations__item__1"
+    "prestations__item__2 prestations__item__3 prestations__item__3"
+    "prestations__item__5 prestations__item__5 prestations__item__4"
+    "prestations__item__6 prestations__item__7 prestations__item__7"
+    "prestations__item__9 prestations__item__9 prestations__item__8";
+  }
+  @for $i from 1 through 9 {
+    .prestations__item__#{$i} {
+        display: block;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      grid-area: prestations__item__#{$i};
+      &:not(:first-child){
+border: $basic-border;
+      }
+  
+    }
+  }
+
+  
+

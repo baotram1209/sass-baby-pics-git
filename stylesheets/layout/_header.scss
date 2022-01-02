@@ -1,49 +1,63 @@
 .header {
 position: sticky;
 top: 0;
-padding: 1.5rem;
+padding: 1rem;
 background-color: $peach;
-width: 100vw;
-height: 5rem;
+width: 100%;
+height: 6rem;
 z-index: 100; //z-index is for z-axis, for the navbar to display above all else on 3 dimension
-    .nav {
-        display: flex;
-        justify-content: space-between;
-       }
-       &__list {
-           display:flex;
-           justify-content: space-around;
-           align-items: center;
+    
 
-       }
+    .burger {
+        display: block;
+                width: 26px;
+                height: 2px;
+                background-color: $coffee;
+
+                &:not(:last-child) {
+                    margin-bottom: 3px;
+                }
     }
 
-.burger {
-    display: block;
-            width: 26px;
-            height: 2px;
-            background-color: $coffee;
-
-            &:not(:last-child) {
-                margin-bottom: 3px;
-            }
+    &__logo {
+        img {
+            height: 4rem;
+            width: auto;
         }
-.nav__logo {
-    img {
-        height: 4rem;
-        width: auto;
     }
 }
-.nav__list a {
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+   
+   &__list {
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+}
+}
+.nav__list {
+    a {
+    display: inline-block;
     font-size: $font-med; 
-    &:not(:last-child){
-        margin-right: 16px;
-    }
+    // &:not(:last-child){
+    //     margin-right: 1rem;
+    // }
     &:hover{
         color: $black;
+    }
+}
+li:not(:last-child) {
+    margin-right: 1rem;
+}
 
 }
+.nav__list li:not(:last-child) {
+    margin-right: 1rem;
 }
+
 //Responsive Visibility
 .hide-for-mobile {
     @include breakpoint-down(medium){
