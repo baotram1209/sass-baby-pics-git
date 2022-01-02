@@ -220,6 +220,14 @@ main {
   background-color: #ffd5b8;
   padding: 2.5rem;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer:not(:last-child) {
@@ -228,8 +236,6 @@ main {
 
 @media (min-width: 64em) {
   .footer {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -250,26 +256,25 @@ main {
   }
 }
 
-.footer__social a {
-  display: inline-block;
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer__social a:not(:last-child) {
-  margin-right: 1rem;
+.footer__social a {
+  padding: 1rem;
 }
 
 @media (min-width: 64em) {
   .footer__social {
     grid-area: social;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -648,6 +653,7 @@ button {
   display: grid;
   max-width: 60%;
   margin: auto;
+  padding-bottom: 1rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 10rem 1fr;

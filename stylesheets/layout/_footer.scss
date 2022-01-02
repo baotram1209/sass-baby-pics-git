@@ -2,14 +2,15 @@
     background-color: $peach;
     padding: 2.5rem;
     width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     &:not(:last-child){
         margin-bottom: 1.7rem;
 }
     @include breakpoint-up(large){
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    
     grid-template-areas: 
     "contact social rights"
     "address social rights";
@@ -25,19 +26,16 @@
         grid-area: address;
     }
 }
-.footer__social{
-    a{
-        display: inline-block;
-    }
-   a:not(:last-child){
-       
-    margin-right: 1rem;
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   a {   
+   padding: 1rem;
 }
     @include breakpoint-up(large){
         grid-area: social;
-        display: flex;
-      justify-content: center;
-      align-items: center;
+     
     }
 }
 .footer__rights{

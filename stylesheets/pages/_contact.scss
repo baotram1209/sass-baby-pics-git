@@ -2,6 +2,7 @@
     display: grid;
     max-width: 60%;
     margin: auto; //to put the grid in center of the screen   
+    padding-bottom: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 10rem 1fr;
     grid-template-areas: 
