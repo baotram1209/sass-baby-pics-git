@@ -1,0 +1,53 @@
+
+.blog{
+    display: grid;
+    max-width: 80%;
+    margin: auto; //to put the grid in center of the screen
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10rem 1fr 2fr;
+    grid-template-areas: 
+    "blog__title blog__title blog__title"
+    "blog_image_1 blog_image_2 blog_image_3"
+    "blog_text_1 blog_text_2 blog_text_3"
+    ;
+    grid-gap: 0.2rem;
+  }
+  .blog__item {
+   background-color: $background-white;
+  }
+  .blog__title {
+      grid-area: blog__title;
+      display: block;
+      padding: 1.5rem;
+      display: flex;
+    justify-content: center;
+      align-items: center;
+  }
+  @for $i from 1 through 3{
+    .blog_text_#{$i} {
+        display: block;
+        padding: 1rem;
+        display: flex;
+    flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+      grid-area: blog_text_#{$i};
+     }
+  }
+
+  @for $i from 1 through 3{
+    .blog_image_#{$i} {
+        // display: block;
+        // padding: 1rem;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+
+      grid-area: blog_image_#{$i};
+     }
+  }
+
+  
+
