@@ -1,0 +1,38 @@
+
+.propos{
+    display: grid;
+    max-width: 80%;
+    margin: auto; //to put the grid in center of the screen
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10rem 1fr;
+    grid-template-areas: 
+   "propos__title propos__title"
+   "propos__image propos__text";
+    grid-gap: 0.2rem;
+  }
+  .propos__item {
+    background-color: $background-white;
+   }
+  .propos__title {
+    grid-area: propos__title;
+    display: block;
+    padding: 1.5rem;
+    display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+  .propos__text {
+      grid-area: propos__text;
+      display: block;
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  
+  
+
+  
+

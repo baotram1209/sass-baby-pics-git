@@ -1,0 +1,38 @@
+
+.studio{
+    display: grid;
+    max-width: 80%;
+    margin: auto; //to put the grid in center of the screen
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10rem 1fr;
+    grid-template-areas: 
+   "studio__title studio__title"
+   "studio__image studio__text";
+    grid-gap: 0.2rem;
+  }
+  .studio__item {
+    background-color: $background-white;
+   }
+  .studio__title {
+    grid-area: studio__title;
+    display: block;
+    padding: 1.5rem;
+    display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+  .studio__text {
+      grid-area: studio__text;
+      display: block;
+        padding: 1rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  
+  
+
+  
+
